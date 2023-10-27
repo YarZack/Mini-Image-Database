@@ -1,3 +1,17 @@
-button {
-    border-radius: 90%;
+.navbar button {
+    border-radius: 98%;
+    border-color: black;
+    color: black;
+}
+.navbar {
+    float: center;
+    display: block;
+    text-align: center;
+  }
+.searchcontainer button {
+    color: white;
+    border-radius: 98%;
+}
+h1 {
+    text-align: center;
 }
