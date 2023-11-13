@@ -55,6 +55,40 @@ function searchImages() {
     }
     displayImages(images);
 }
+//I propose to improve the search function like this
+/*function searchImages() {
+    const searchInput = document.getElementById('search-input').value;
+    const outputContainer = document.getElementById('output');
+    const keywords = searchInput.toLowerCase().split(' '); // Split input into keywords
+    let images = [];
+
+    keywords.forEach(keyword => {
+        switch (keyword) {
+            case 'desktop':
+                images = images.concat(getDesktopImages());
+                break;
+            case 'cellphone':
+                images = images.concat(getCellphoneImages());
+                break;
+            case 'laptop':
+                images = images.concat(getLaptopImages());
+                break;
+            case 'headphone':
+                images = images.concat(getHeadphoneImages());
+                break;
+            default:
+                // Optionally handle unmatched keywords
+        }
+    });
+
+    if (images.length === 0) {
+        alert('No matching categories found');
+        return;
+    }
+
+    displayImages(images);
+} */ 
+
 
 function displayImages(images) {
     const outputContainer = document.getElementById('output');
