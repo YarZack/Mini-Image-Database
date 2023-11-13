@@ -72,19 +72,17 @@ button[type="submit"]:hover {
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
     margin: 10px;
 }
 
 .faq-heading{
     text-decoration: underline;
     font-weight: bold;
-}
-
-.center-align{
     text-align: center;
 }
+
 footer {
     position: absolute;
     bottom: 0;
