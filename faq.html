@@ -12,19 +12,18 @@
         <button type="button" onclick="location.href='searchpage.html'">Search menu</button>
     </div><br><br>
     <div class="search-container">
-      <form action="searchresults.html" method="get">
-        <input type="text" placeholder="Search.." name="search" id="search-input">
-        <button type="submit">Search</button>
+    <form id="searchForm" onsubmit="searchImages(); return false;">
+    <input type="text" placeholder="Search.." name="search" id="search-input">
+    <button type="submit">Search</button>
     </form>
     </div>
-    <div class="center-align">
         <h2 class="faq-heading">Frequently Asked Questions</h2>
         <ul>
-              <li id="question1" onclick="showAnswer('question1')"><em>Q: How can I search for the pictures?</em></li>
+            <li id="question1" onclick="showAnswer('question1')"><em>Q: How can I search for the pictures?</em></li>
             <li id="question2" onclick="showAnswer('question2')"><em>Q: How do I go back to the main menu?<em></em></li>
             <li id="question3" onclick="showAnswer('question3')"><em>Q: Is there a thorough description for the items I am looking at?</em></li>
             <li id="question4" onclick="showAnswer('question4')"><em>Q: Can I download these pictures?</em></li>
         </ul>
-    </div>
+    <div id="output" class="output"></div>
 </body>
 </html>
