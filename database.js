@@ -77,7 +77,6 @@ function searchImages() {
                 images = images.concat(getHeadphoneImages());
                 break;
             default:
-                // Optionally handle unmatched keywords
         }
     });
 
