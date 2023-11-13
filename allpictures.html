@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="website.css">
+    <script src="database.js"></script>
+</head>
+<body>
+    <h1> All Pictures</h1>
+    <h2 style="text-align: center;">Search menu</h2>
+    <div class="navbar">
+        <button type="button" onclick="location.href='allpictures.html'">All pictures</button>
+        <button type="button" onclick="location.href='faq.html'">FAQ</button>
+        <button type="button" onclick="location.href='searchpage.html'">Search menu</button>
+    </div><br><br>
+    <div class="search-container">
+    <form id="searchForm" onsubmit="searchImages(); return false;">
+    <input type="text" placeholder="Search.." name="search" id="search-input">
+    <button type="submit">Search</button>
+      </form>
+      </div>
+    <div id="output" class="output"></div>
+<script>
+    function getAllImages() {
+        return [
+            ...getDesktopImages(),
+            ...getCellphoneImages(),
+            ...getLaptopImages(),
+            ...getHeadphoneImages(),
+        ];
+    }
+    function displayAllImages() {
+        const allImages = getAllImages();
+        displayImages(allImages);
+    }
+        document.addEventListener('DOMContentLoaded', function () {
+        displayAllImages();
+    });
+    </script>
+</body>
+</html>
