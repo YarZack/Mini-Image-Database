@@ -58,10 +58,10 @@ function getHeadphoneImages() {
 }*/
 
 function searchImages() {
-    const searchInput = document.getElementById('search-input').value;
-    const outputContainer = document.getElementById('output');
-    const keywords = searchInput.toLowerCase().split(' '); // Split input into keywords
-    let images = [];
+    var searchInput = document.getElementById('search-input').value;
+    var outputContainer = document.getElementById('output');
+    var keywords = searchInput.toLowerCase().split(' '); // Split input into keywords
+    var images = [];
 
     keywords.forEach(keyword => {
         switch (keyword) {
