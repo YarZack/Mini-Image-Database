@@ -111,3 +111,19 @@ function showAnswer(questionId) {
     var answer = answers[questionId];
     alert(answer);
 }
+
+function getAllImages() {
+    return [
+        ...getDesktopImages(),
+        ...getCellphoneImages(),
+        ...getLaptopImages(),
+        ...getHeadphoneImages(),
+    ];
+}
+function displayAllImages() {
+    var allImages = getAllImages();
+    displayImages(allImages);
+}
+    document.addEventListener('DOMContentLoaded', function () {
+    displayAllImages();
+});
