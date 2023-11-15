@@ -104,8 +104,12 @@ function showAnswer(questionId) {
     var answers = {
         'question1': 'A: You can enter keywords in the search bar to find pictures.',
         'question2': 'A: You can use the navigation buttons provided on top of the page.',
-        'question3': 'A: No, detailed descriptions are not provided, as we do not sell the displayed items .',
-        'question4': 'A: No, the download feature is not available. You can view and enjoy the pictures online though.'
+        'question3': 'A: No, detailed descriptions are not provided, as we do not sell the displayed items.',
+        'question4': 'A: No, the download feature is not available. You can view and enjoy the pictures online though.',
+        'question5': 'A: At the moment, we do not provide any external links for our images, but the images shown in our database are based on the highest selling products in the market, so you can find them easily on Google.',
+        'question6': 'A: No, this database only provides images related to electronics.',
+        'question7': 'A: If you cannot find the specific image you are looking for, hang on tight as we add new images related to our categories onto our site daily.',
+        'question8': 'A: No, the searches are based on a category basis.'
     };
 
     var answer = answers[questionId];
