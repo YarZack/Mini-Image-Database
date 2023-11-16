@@ -38,29 +38,10 @@ function getHeadphoneImages() {
         { url: 'https://ca.jbl.com/dw/image/v2/AAUJ_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3b9796ab/450BT_black_angle_01-1606x1606px.png?sw=537&sfrm=png', alt: "JBL Headphones"},
     ];
 }
-/*function searchImages() {
-    const searchInput = document.getElementById('search-input').value;
-    const outputContainer = document.getElementById('output');
-    let images;
-    if (searchInput.toLowerCase() == 'desktop') {
-        images = getDesktopImages();
-    } else if (searchInput.toLowerCase() == 'cellphone') {
-        images = getCellphoneImages();
-    } else if (searchInput.toLowerCase() == 'laptop') {
-        images = getLaptopImages();
-    } else if (searchInput.toLowerCase() == 'headphone') {
-        images = getHeadphoneImages();
-    } else {
-        alert('Category not found');
-        return;
-    }
-    displayImages(images);
-}*/
-
 function searchImages() {
     var searchInput = document.getElementById('search-input').value;
     var outputContainer = document.getElementById('output');
-    var keywords = searchInput.toLowerCase().split(' '); // Split input into keywords
+    var keywords = searchInput.toLowerCase().split(' '); 
     var images = [];
 
     keywords.forEach(keyword => {
@@ -129,6 +110,3 @@ function displayAllImages() {
     var allImages = getAllImages();
     displayImages(allImages);
 }
-    document.addEventListener('DOMContentLoaded', function () {
-    displayAllImages();
-});
