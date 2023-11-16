@@ -52,7 +52,7 @@ function getConsoleImages() {
 function searchImages() {
     var searchInput = document.getElementById('search-input').value;
     var outputContainer = document.getElementById('output');
-    var keywords = searchInput.toLowerCase().split(' '); // Split input into keywords
+    var keywords = searchInput.toLowerCase().split(' '); 
     var images = [];
 
     keywords.forEach(keyword => {
@@ -124,6 +124,3 @@ function displayAllImages() {
     var allImages = getAllImages();
     displayImages(allImages);
 }
-    document.addEventListener('DOMContentLoaded', function () {
-    displayAllImages();
-});
