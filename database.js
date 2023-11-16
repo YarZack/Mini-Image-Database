@@ -80,7 +80,6 @@ function searchImages() {
         alert('No matching categories found');
         return;
     }
-
     displayImages(images);
 } 
 
