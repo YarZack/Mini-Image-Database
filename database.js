@@ -4,6 +4,7 @@ var pictureDatabase = {
     'laptop': getLaptopImages(),
     'headphone': getHeadphoneImages(),
     'console': getConsoleImages(),
+    'accessories': getSmartAccImages(),
 };
 
 function getDesktopImages() {
@@ -49,6 +50,16 @@ function getConsoleImages() {
     ];
 }
 
+function getSmartAccImages() {
+    return [
+        { url: 'https://media.wired.com/photos/6511aab1189c419c40374c92/16:9/w_2400,h_1350,c_limit/Apple-Watch-Ultra-2-Alt-Gear.jpg', alt: "Apple Watch"},
+        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9FQWpHi_oe4X9N-mszHSbMrIn3EB4cDZVTyeY9moVpeIGRwdIz8ZxLccGdqAf21Gbg1Y&usqp=CAU', alt:"Google Home"},
+        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS92yMImJlWb87UMx5pF3WBVt9OFYfmG5_NQ&usqp=CAU', alt: "Apple TV"},
+        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTJkekUn_Cv291ELcBN2PLxgDAa6FCt5a7EQ&usqp=CAU', alt:" AirTag"},
+    ];
+}
+
+
 function searchImages() {
     var searchInput = document.getElementById('search-input').value;
     var outputContainer = document.getElementById('output');
@@ -72,6 +83,9 @@ function searchImages() {
             case 'console':
                 images = images.concat(getConsoleImages());
                 break;
+            case 'smartaccessory':
+                  images = images.concat(getSmartAccImages());
+                  break; 
             default:
         }
     });
@@ -117,6 +131,8 @@ function getAllImages() {
         ...getCellphoneImages(),
         ...getLaptopImages(),
         ...getHeadphoneImages(),
+        ...getConsoleImages(),
+        ...getSmartAccImages(),
     ];
 }
 function displayAllImages() {
