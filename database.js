@@ -18,9 +18,9 @@ function getDesktopImages() {
 function getCellphoneImages() {
     return [
         { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4iyEPXjfXqYZMtd53oHvLe9LQiHrPSROw7w&usqp=CAU', alt: 'iPhone'},
-        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7rxQ-EMz5dGXOPlKgiCvHQSwDIa9JcrlgA&usqp=CAU', alt: 'LG'},
+        { url: 'https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/onpleus_nord_n20_se_2.jpg', alt: 'One Plus'},
         { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBd2VkEeagxyHR_esHjWIGk53xfmzUp9J5Nw&usqp=CAU', alt: 'Samsung'},
-        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjwxK9t9XYpyCTioU1ONad0iO8lTw3myb-ow&usqp=CAU', alt: 'Blackberry'},
+        { url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWqSFaQTnqMCOQYPEPwCWNj-9SQb75cS8fQg&usqp=CAU', alt: 'Google Pixel'},
     ];
 }
 function getLaptopImages() {
