@@ -125,7 +125,7 @@ function showAnswer(questionId) {
     alert(answer);
 }
 
-function getAllImages() {
+function getAllImages() { // Spread Operator
     return [
         ...getDesktopImages(),
         ...getCellphoneImages(),
