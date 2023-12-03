@@ -5,7 +5,7 @@
     <script src="database.js"></script>
 </head>
 <body>
-    <h1> Welcome to the Mini Electronic Image Database</h1>
+    <h1>Welcome to the Mini Electronic Image Database</h1>
     <h2 style="text-align: center;">Search Page</h2>
     <div class="navbar">
         <button type="button" onclick="location.href='allpictures.html'">All pictures</button>
@@ -13,14 +13,27 @@
         <button type="button" onclick="location.href='searchpage.html'">Search Page</button>
     </div><br><br>
     <div class="search-container">
-    <form id="searchForm" onsubmit="searchImages(); return false;">
-    <input type="text" placeholder="Search.." name="search" id="search-input">
-    <button type="submit">Search</button>
-    </form>
+        <form id="searchForm" onsubmit="searchImages(); return false;">
+            <input type="text" placeholder="Search.." name="search" id="search-input">
+            <button type="submit">Search</button>
+        </form>
     </div>
     <div id="output" class="output"></div>
-    <p>Our Electronic Database has 6 categories and here are their keywords:<u><em> desktop, cellphone, laptop , headphone , console and smartaccessory.</em></u></p>
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li>Desktop images</li>
+            <li>Cellphone images</li>
+            <li>Laptop images</li>
+            <li>Headphone images</li>
+            <li>Console images</li>
+            <li>Smart accessory images</li>
+        </ul>
+    </div>
+    <p>Our Electronic Database has 6 categories, and here are their keywords: <u><em> desktop, cellphone, laptop, headphone, console, and smartaccessory.</em></u></p>
     <p>When we enter the keywords above in the Search Bar, pictures related to that category will appear.</p>
-    <footer>&copy;Designed by: Thi Ngoc Mai Do, Zack Nayar, and Yegor Sokolov </footer>
+    <p>List of Images available: Desktop images, cellphone images, laptop images, headphone images, console images, and smart accessory images.</p>
+
+    <footer>&copy; Designed by: Thi Ngoc Mai Do, Zack Nayar, and Yegor Sokolov </footer>
 </body>
 </html>
